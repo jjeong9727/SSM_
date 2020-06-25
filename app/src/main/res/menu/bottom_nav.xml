@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="HOME"/>
+    <item
+        android:id="@+id/recommend"
+        android:icon="@drawable/ic_local_dining_black_24dp"
+        android:title="RECOMMEND"/>
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/ic_calendar_black_24dp"
+        android:title="HOME"/>
+    <item
+        android:id="@+id/myPage"
+        android:icon="@drawable/ic_my_page_black_24dp"
+        android:title="HOME"/>
+</menu>

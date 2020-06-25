@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+<!--로고-->
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGO"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp"/>
+<!--본문내용-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="추천음식"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:hint="음식 또는 음식점 검색"
+                android:layout_marginVertical="10dp"
+                android:textSize="16dp"
+                android:background="@color/colorWhite"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--깐새우장-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:layout_width="72dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="5">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="245dp"
+                                android:layout_height="wrap_content"
+                                android:text="깐새우장"
+                                android:textSize="16dp"/>
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="34dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="탱글탱글 통통한 새우와 깊고 진한 맛의 특제 간장의 조화"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--특갈비탕-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:layout_width="72dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="5">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="245dp"
+                                android:layout_height="wrap_content"
+                                android:text="특갈비탕"
+                                android:textSize="16dp"/>
+                            <ImageButton
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="갈비탕의 시원하고 담백한 맛과 부드러움을 한 번에 느낄 수 있습니다."
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--닭가슴살 소세지-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:layout_width="72dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="5">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">                        >
+                            <TextView
+                                android:layout_width="245dp"
+                                android:layout_height="wrap_content"
+                                android:text="닭가슴살 소세지"
+                                android:textSize="16dp"/>
+                            <ImageButton
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="뽀도독 터지는 띵커바디 닭가슴살 소세지(오리지널/청양고추/치즈)"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--벌집 껍데기-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:layout_width="72dp"
+                        android:layout_height="65dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="5">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="245dp"
+                                android:layout_height="wrap_content"
+                                android:text="벌집 껍데기"
+                                android:textSize="16dp"/>
+                            <ImageButton
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="고소하고 쫄깃쫄깃한 벌집 껍데기 콩가루와 함께 즐겨요."
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGO"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginVertical="15dp"/>
+    <RelativeLayout
+        android:id="@+id/myPageLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:background="@color/colorContentBack"
+        android:padding="15dp">
+            <!--그래프자리-->
+            <TextView
+                android:id="@+id/calorieGraph"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="center"
+                android:text="Graph"
+                android:layout_marginRight="40dp"/>
+            <TextView
+                android:id="@+id/myPageAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="______  님"
+                android:textColor="@color/colorFont"
+                android:textSize="13dp"
+                android:layout_toRightOf="@+id/calorieGraph"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="______ cm  _____ kg"
+                android:textColor="@color/colorFont"
+                android:textSize="13dp"
+                android:layout_toRightOf="@+id/calorieGraph"
+                android:layout_below="@+id/myPageAccount"/>
+    </RelativeLayout>
+<!--체중기록 -->
+    <TextView
+        android:id="@+id/myPageWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="체중 기록"
+        android:textSize="15dp"
+        android:textColor="@color/colorFont"
+        android:textStyle="bold"
+        android:layout_below="@id/myPageLayout1"
+        android:layout_marginVertical="15dp"/>
+    <RelativeLayout
+        android:id="@+id/myPageLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="15dp"
+        android:layout_below="@id/myPageWeight"
+        android:background="@color/colorContentBack">
+    </RelativeLayout>
+</RelativeLayout>
