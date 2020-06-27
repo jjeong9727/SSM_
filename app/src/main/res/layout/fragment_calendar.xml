@@ -51,11 +51,13 @@
                         android:text="달력 가이드"
                         android:textSize="12dp"
                         android:layout_gravity="center_vertical"/>
-                    <Button
+                    <ImageButton
                         android:id="@+id/guideBtn"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_gravity="center_vertical"/>
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/guide_button"/>
                 </LinearLayout>
             </LinearLayout>
             <!--달력-->

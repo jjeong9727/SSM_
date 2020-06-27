@@ -14,22 +14,29 @@
             android:orientation="vertical"
             android:padding="15dp">
             <!--로고-->
-            <TextView
+<!--            <TextView-->
+<!--                android:id="@+id/logo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="ㅅㅅ ㅡ ㅁ"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="25dp"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="5dp"/>-->
+            <ImageView
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ㅅㅅ ㅡ ㅁ"
-                android:textAlignment="center"
-                android:textSize="25dp"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:padding="5dp"/>
+                android:src="@drawable/logo"/>
+
 
             <!--활동량-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -58,32 +65,48 @@
                             android:textColor="@color/colorFont"
                             android:layout_weight="1"
                             android:gravity="end"/>
-                        <Button
+                        <ImageButton
                             android:id="@+id/guideBtn"
                             android:layout_width="20dp"
-                            android:layout_height="20dp"/>
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/guide_button"/>
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal"
-                    android:layout_marginTop="10dp">
-                    <Button
-                        android:id="@+id/btnHigh"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
-                    <Button
-                        android:id="@+id/btnMiddle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
-                    <Button
+                    android:paddingHorizontal="15dp"
+                    android:background="@color/colorContentBack"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
                         android:id="@+id/btnLow"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/active_low" />
+
+                    <ImageButton
+                        android:id="@+id/btnMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:src="@drawable/active_middle" />
+
+                    <ImageButton
+                        android:id="@+id/btnHigh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/active_high" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -131,30 +154,30 @@
                         android:text="권장 영양소"
                         android:textSize="18dp"
                         android:textColor="@color/colorFont"
-                        android:layout_marginLeft="5dp"
-                        android:layout_weight="1"/>
+                        android:layout_marginLeft="5dp"/>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_weight="1"
                         android:gravity="right">
-                        <Button
+                        <ImageButton
                             android:layout_width="10dp"
                             android:layout_height="10dp"
-                            android:background="@color/colorNoticeGreen"
-                            android:gravity="center_vertical"/>
+                            android:src="@drawable/alert_green"
+                            android:layout_gravity="center_vertical"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="충분해"
+                            android:text="충분"
                             android:textSize="12dp"
                             android:gravity="center_vertical"
                             android:layout_marginHorizontal="5dp"/>
-                        <Button
+                        <ImageButton
                             android:layout_width="10dp"
                             android:layout_height="10dp"
-                            android:background="@color/colorNoticeRed"/>
+                            android:src="@drawable/alert_red"
+                            android:layout_gravity="center_vertical"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
