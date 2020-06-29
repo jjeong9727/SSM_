@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 
 public class FragmentHome extends Fragment {
@@ -22,3 +25,5 @@ public class FragmentHome extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 }
+
+

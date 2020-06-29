@@ -14,4 +14,5 @@
     <color name="colorNoticeGreen">#72d741</color>
     <color name="colorNoticeRed">#ff0000</color>
     <color name="colorFont">#4d4f5e</color>
+    <color name="colorButtonEdge">#e0dfef</color>
 </resources>

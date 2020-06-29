@@ -13,17 +13,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="15dp">
-            <!--로고-->
-<!--            <TextView-->
-<!--                android:id="@+id/logo"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="ㅅㅅ ㅡ ㅁ"-->
-<!--                android:textAlignment="center"-->
-<!--                android:textSize="25dp"-->
-<!--                android:textColor="@color/colorPrimary"-->
-<!--                android:textStyle="bold"-->
-<!--                android:padding="5dp"/>-->
+        <!--로고-->
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
@@ -31,7 +21,7 @@
                 android:src="@drawable/logo"/>
 
 
-            <!--활동량-->
+        <!--활동량-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,7 +60,7 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_marginLeft="5dp"
-                            android:src="@drawable/guide_button"/>
+                            android:src="@drawable/ic_guide_button"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -88,8 +78,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:src="@drawable/active_low" />
+                        android:background="@drawable/btn_active_edge"
+                        android:src="@drawable/ic_active_low" />
 
                     <ImageButton
                         android:id="@+id/btnMiddle"
@@ -97,16 +87,16 @@
                         android:layout_height="35dp"
                         android:layout_marginHorizontal="5dp"
                         android:layout_weight="1"
-                        android:background="@color/colorAccent"
-                        android:src="@drawable/active_middle" />
+                        android:background="@drawable/btn_active_edge_selected"
+                        android:src="@drawable/ic_active_middle" />
 
                     <ImageButton
                         android:id="@+id/btnHigh"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:layout_weight="1"
-                        android:background="@color/colorWhite"
-                        android:src="@drawable/active_high" />
+                        android:background="@drawable/btn_active_edge"
+                        android:src="@drawable/ic_active_high" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -130,11 +120,20 @@
                     android:layout_gravity="center"
                     android:background="@color/colorContentBack"
                     android:layout_marginTop="10dp">
-                    <TextView
-                        android:id="@+id/calorieGraph"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="그래프 삽입"/>
+                        tools:context=".MainActivity">
+
+                        <com.anychart.AnyChartView
+                            android:id="@+id/any_chart_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:ignore="MissingConstraints" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -164,7 +163,7 @@
                         <ImageButton
                             android:layout_width="10dp"
                             android:layout_height="10dp"
-                            android:src="@drawable/alert_green"
+                            android:src="@drawable/ic_alert_green"
                             android:layout_gravity="center_vertical"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -176,7 +175,7 @@
                         <ImageButton
                             android:layout_width="10dp"
                             android:layout_height="10dp"
-                            android:src="@drawable/alert_red"
+                            android:src="@drawable/ic_alert_red"
                             android:layout_gravity="center_vertical"/>
                         <TextView
                             android:layout_width="wrap_content"
@@ -195,11 +194,10 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
                     android:background="@color/colorContentBack">
-                    <TextView
-                        android:id="@+id/gradientGraph"
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/stacked_barChart"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="그래프 삽입"/>
+                        android:layout_height="match_parent"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -223,6 +221,7 @@
                     android:layout_height="30dp">
                     <!--텍스트뷰,버튼 테두리 설정 방법 찾기-->
                     <Button
+                        android:id="@+id/btnAll"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="전체"
@@ -231,6 +230,7 @@
                         android:background="@color/colorAccent"
                         android:layout_weight="1"/>
                     <Button
+                        android:id="@+id/btnBreakfast"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="아침"
@@ -239,6 +239,7 @@
                         android:background="@color/colorBreakFast"
                         android:layout_weight="1"/>
                     <Button
+                        android:id="@+id/btnLunch"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="점심"
@@ -247,6 +248,7 @@
                         android:background="@color/colorLunch"
                         android:layout_weight="1"/>
                     <Button
+                        android:id="@+id/btnDinner"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="저녁"
@@ -255,6 +257,7 @@
                         android:background="@color/colorDinner"
                         android:layout_weight="1"/>
                     <Button
+                        android:id="@+id/btnSnack"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="간식"
@@ -319,7 +322,8 @@
                         android:textSize="13dp"
                         android:layout_below="@+id/sicdanTable"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginVertical="5dp"/>
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/btn_edit_edge"/>
 
 
                 </LinearLayout>
