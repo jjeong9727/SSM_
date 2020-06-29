@@ -45,7 +45,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <!--깐새우장-->
+        <!--깐새우장-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--특갈비탕-->
+        <!--특갈비탕-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--닭가슴살 소세지-->
+        <!--닭가슴살 소세지-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--벌집 껍데기-->
+        <!--벌집 껍데기-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

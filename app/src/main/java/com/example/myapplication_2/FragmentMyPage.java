@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 public class FragmentMyPage extends Fragment {
     @Nullable
     @Override
+// 마이페이지로 이동하는 메소드
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         setHasOptionsMenu(true);
         return inflater.inflate(R.layout.fragment_my_page, container, false);

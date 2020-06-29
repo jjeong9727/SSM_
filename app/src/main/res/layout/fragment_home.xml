@@ -113,7 +113,8 @@
                     android:textSize="18dp"
                     android:textColor="@color/colorFont"
                     android:layout_marginLeft="5dp"/>
-                <!--            칼로리 그래프-->
+                <!--칼로리 그래프-->
+                <!--참고한 그래프 코드 세세하게 분석 필요-> 디자인, 입력 방법 모색-->
                 <LinearLayout
                     android:layout_width="380dp"
                     android:layout_height="200dp"
@@ -187,6 +188,7 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!--영양소 그래프-->
+                <!--참고한 그래프 코드 세세하게 분석 필요-> 디자인, 입력 방법 모색-->
                 <LinearLayout
                     android:layout_width="380dp"
                     android:layout_height="250dp"
@@ -201,7 +203,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-<!--식단표-->
+            <!--식단표-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -215,11 +217,11 @@
                     android:textColor="@color/colorFont"
                     android:layout_marginLeft="5dp"
                     android:layout_marginBottom="10dp"/>
-<!--식단표 구분-->
+            <!--식단표 구분-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="30dp">
-                    <!--텍스트뷰,버튼 테두리 설정 방법 찾기-->
+                    <!--텍스트뷰, 버튼 모양 style 다시 잡아 적용-->
                     <Button
                         android:id="@+id/btnAll"
                         android:layout_width="wrap_content"

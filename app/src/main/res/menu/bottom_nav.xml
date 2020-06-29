@@ -11,9 +11,9 @@
     <item
         android:id="@+id/calendar"
         android:icon="@drawable/ic_calendar_black_24dp"
-        android:title="HOME"/>
+        android:title="CALENDAR"/>
     <item
         android:id="@+id/myPage"
         android:icon="@drawable/ic_my_page_black_24dp"
-        android:title="HOME"/>
+        android:title="MYPAGE"/>
 </menu>
